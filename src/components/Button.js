@@ -2,7 +2,7 @@
  * @Author: Ali
  * @Date:   2019-11-14T13:47:59+01:00
  * @Last modified by:   Ali
- * @Last modified time: 2019-11-16T12:01:23+01:00
+ * @Last modified time: 2019-11-24T14:51:18+01:00
  */
 import React from "react";
 import styled from "styled-components";
@@ -24,12 +24,11 @@ const MyButton = styled.button`
   }
 `;
 
-const Button = ({ value, handleClick, label }) => {
+const Button = ({ setInput, label, value }) => {
   return (
     <>
-      <MyButton onClick={handleClick}>{label}</MyButton>
+      <MyButton onClick={e => setInput(e.target.innerText)}>{label}</MyButton>
     </>
   );
 };
 export default Button;
-// <div onClick={this.props.onClick} className="Button" data-size={this.props.size} data-value={this.props.value}>
