@@ -1,0 +1,12 @@
+/**
+ * @Author: Ali
+ * @Date:   2019-11-16T11:57:38+01:00
+ * @Last modified by:   Ali
+ * @Last modified time: 2019-11-16T12:00:32+01:00
+ */
+.display {
+  background-color: black;
+  color: green;
+  font-size: 2em;
+  padding: 30px;
+}

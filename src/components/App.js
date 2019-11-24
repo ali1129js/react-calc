@@ -2,26 +2,33 @@
  * @Author: Ali
  * @Date:   2019-11-14T13:22:40+01:00
  * @Last modified by:   Ali
- * @Last modified time: 2019-11-16T00:20:39+01:00
+ * @Last modified time: 2019-11-16T17:12:46+01:00
  */
 
-import React from "react";
+import React, { useState } from "react";
 import Buttons from "./Buttons";
 import Button from "./Button";
+import "./App.css";
 
 const App = () => {
+  const [input, setInput] = useState("");
   const handleClick = e => {
-    console.log(e.target.innerText);
+    //e.target = <button>
+    // button's value = innerText
+
+    setInput(e.target.innerText);
   };
   return (
     <div className="App">
+      <div className="display">{input}</div>
       <Buttons>
-        <Button handleClick={handleClick} label="C" value="clear" />
-        <Button handleClick={handleClick} label="7" value="7" />
-        <Button handleClick={handleClick} label="4" value="4" />
-        <Button handleClick={handleClick} label="1" value="1" />
-        <Button handleClick={handleClick} label="0" value="0" />
-
+        <div className="row">
+          <Button handleClick={handleClick} label="C" value="clear" />
+          <Button handleClick={handleClick} label="7" value="7" />
+          <Button handleClick={handleClick} label="4" value="4" />
+          <Button handleClick={handleClick} label="1" value="1" />
+          <Button handleClick={handleClick} label="0" value="0" />
+        </div>
         <Button handleClick={handleClick} label="/" value="/" />
         <Button handleClick={handleClick} label="8" value="8" />
         <Button handleClick={handleClick} label="5" value="5" />
