@@ -2,11 +2,21 @@
  * @Author: Ali
  * @Date:   2019-11-16T11:57:38+01:00
  * @Last modified by:   Ali
- * @Last modified time: 2019-11-16T12:00:32+01:00
+ * @Last modified time: 2019-11-26T11:51:44+01:00
  */
+.App {
+  border: 3px solid navy;
+  width : 50%;
+  justify-content: center;
+  margin:auto;
+  margin-top: 20px;
+  box-shadow: 2px 5px 5px 2px #000;
+}
+
 .display {
   background-color: black;
-  color: green;
+  color: #32ff7e;
   font-size: 2em;
   padding: 30px;
+  height: 30px;
 }
